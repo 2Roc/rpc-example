@@ -15,7 +15,7 @@ public class Client {
     public static void main(String [] args) throws IOException {
         String serviceName = HelloService.class.getCanonicalName();
         File tmpDirFile = new File(System.getProperty("java.io.tmpdir"));
-        File file = new File(tmpDirFile, "simple_rpc_name_service.data");
+        File file = new File(tmpDirFile, "rpc_example_name_service.data");
         String name = "Master MQ";
         try(RpcAccessPoint rpcAccessPoint = ServiceSupport.load(RpcAccessPoint.class)) {
             NameService nameService = rpcAccessPoint.getNameService(file.toURI());

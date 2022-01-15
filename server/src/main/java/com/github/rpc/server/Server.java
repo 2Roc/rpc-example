@@ -1,4 +1,4 @@
-package java.com.github.rpc.server;
+package com.github.rpc.server;
 
 import com.github.rpc.NameService;
 import com.github.rpc.RpcAccessPoint;
@@ -16,7 +16,7 @@ public class Server {
 
         String serviceName = HelloService.class.getCanonicalName();
         File tmpDirFile = new File(System.getProperty("java.io.tmpdir"));
-        File file = new File(tmpDirFile, "simple_rpc_name_service.data");
+        File file = new File(tmpDirFile, "rpc_example_name_service.data");
         HelloService helloService = new HelloServiceImpl();
         log.info("创建并启动RpcAccessPoint...");
         try(RpcAccessPoint rpcAccessPoint = ServiceSupport.load(RpcAccessPoint.class);

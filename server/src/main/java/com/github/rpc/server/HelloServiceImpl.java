@@ -1,4 +1,4 @@
-package java.com.github.rpc.server;
+package com.github.rpc.server;
 
 import com.github.rpc.hello.HelloService;
 import lombok.extern.slf4j.Slf4j;
